@@ -1,0 +1,31 @@
+[[search_dirs]]
+path = "/home/ghost/code"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/notes"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/csdemia"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/PycharmProjects"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/rust"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/ml"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/school_code"
+depth = 10
+
+[[search_dirs]]
+path = "/home/ghost/competitive_programming"
+depth = 10
