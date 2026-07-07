@@ -1,0 +1,4 @@
+add_newline = false
+command_timeout = 200
+scan_timeout = 200
+format = "$all$character"
