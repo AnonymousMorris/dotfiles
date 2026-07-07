@@ -9,4 +9,11 @@ o.smartcase = true             -- case-sensitive only if i type a capital
 o.clipboard = 'unnamedplus'    -- share the system clipboard
 o.scrolloff = 16               -- keep cursor away from the screen edge
 o.undofile = true              -- persistent undo across sessions
-
+o.termguicolors = true         -- use theme-provided truecolor highlights
+o.guicursor = table.concat({
+  "n-v-c:block-Cursor/lCursor",
+  "i-ci-ve:ver25-Cursor/lCursor",
+  "r-cr-o:hor20-Cursor/lCursor",
+  "t:block-blinkon500-blinkoff500-TermCursor",
+  "sm:block-blinkwait175-blinkoff150-blinkon175",
+}, ",")
