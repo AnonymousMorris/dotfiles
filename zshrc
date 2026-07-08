@@ -36,6 +36,7 @@ source <(fzf --zsh)
 bindkey -e
 bindkey '^p' fzf-history-widget
 bindkey '^n' history-search-forward
+bindkey '^H' backward-kill-word
 
 # History
 HISTSIZE=5000
