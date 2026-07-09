@@ -17,6 +17,7 @@ return {
         'pyright',
         'ts_ls',
         'zls',
+        'clangd',
       },
       automatic_enable = true,
     },
@@ -55,10 +56,10 @@ return {
           end
 
           map('gd', function() Snacks.picker.lsp_definitions() end, 'Goto Definition' )
-          map('gr', function() Snacks.picker.lsp_references() end, 'References') 
+          map('gr', function() Snacks.picker.lsp_references() end, 'References')
           map('gi', function() Snacks.picker.lsp_implementations() end, 'Goto Implementation')
           map('K', vim.lsp.buf.hover, 'Hover')
-          map('gD', vim.lsp.buf.declaration, 'Goto Declaration') 
+          map('gD', vim.lsp.buf.declaration, 'Goto Declaration')
           map('<leader>rn', vim.lsp.buf.rename, 'Rename')
           map('<leader>ca', vim.lsp.buf.code_action, 'Code Action')
           map('<leader>d', vim.diagnostic.open_float, 'Line Diagnostics')

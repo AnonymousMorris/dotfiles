@@ -10,6 +10,7 @@ o.clipboard = 'unnamedplus'    -- share the system clipboard
 o.scrolloff = 16               -- keep cursor away from the screen edge
 o.splitright = true            -- open vertical splits to the right and focus them
 o.undofile = true              -- persistent undo across sessions
+o.signcolumn = "yes"           -- Add a extra column so errors don't shift right to make room
 o.termguicolors = true         -- use theme-provided truecolor highlights
 o.guicursor = table.concat({
   "n-v-c:block-Cursor/lCursor",
@@ -18,3 +19,10 @@ o.guicursor = table.concat({
   "t:block-blinkon500-blinkoff500-TermCursor",
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }, ",")
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  callback = function ()
+    vim.hl.on_yank()
+  end
+})
