@@ -1,0 +1,4 @@
+font-size = 14
+
+# Send Meta-Backspace for TUIs like Codex that do not handle Ctrl+Backspace directly.
+keybind = ctrl+backspace=text:\x1b\x7f
