@@ -37,6 +37,8 @@ bindkey -e
 bindkey '^p' fzf-history-widget
 bindkey '^n' history-search-forward
 bindkey '^H' backward-kill-word
+bindkey '\e[1;5D' backward-word
+bindkey '\e[1;5C' forward-word
 
 # History
 HISTSIZE=5000
