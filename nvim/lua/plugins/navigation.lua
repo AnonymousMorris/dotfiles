@@ -11,6 +11,21 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
+      dashboard = {
+        enabled = true,
+        sections = {
+          {
+            title = "Projects",
+            section = "projects",
+            limit = 10,
+            action = function(dir)
+              vim.fn.chdir(dir)
+              vim.cmd.Explore()
+            end,
+          },
+          { section = "startup" },
+        },
+      },
       picker = { enabled = true },
       notifier = { enabled = true },
       input = { enabled = true },
